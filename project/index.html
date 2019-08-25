@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Final Project </title>
+<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="main">
+    <div class="left">
+       <h1>Enter your Information</h1>
+    <br>
+    <br>
+    <button onclick="myFunction7()"">Full Name</button>
+    <p id="name"></p>
+    <br>
+      <br>
+    <button onclick="myFunction1()">Date Of Birth</button>
+    <p id="1"></p>
+    <br>
+    <br>
+    <button onclick="myFunction2()">Age</button>
+      <p id="2"></p>
+    <br>
+    <br>
+      <button onclick="myFunction3()">Contact</button>
+    <p id="3"></p>
+    <br>
+    <br>
+   <button onclick="myFunction4()">Email</button>
+    <p id="4"></p>
+    <br>
+    <br>
+    <button onclick="myFunction5()">Address</button>
+    <p id="5"></p>
+     <script>
+     function myFunction7() {
+    var person = prompt("Please enter your full name", "");
+    if (person != null) {
+    document.getElementById("name").innerHTML =
+    " This is your Full name !" + person + "";
+    }
+    }
+    function myFunction1() {
+     var person = prompt("Please enter your Date Of Birth", "");
+    if (person != null) {
+    document.getElementById("1").innerHTML =
+    "Here is your Date Of Birth !" + person + "";
+    }
+    }
+    function myFunction2() {
+    var person = prompt("Please enter your age", "");
+    if (person != null) {
+    document.getElementById("2").innerHTML =
+    "Here is your age ! " + person + "";
+    }
+  
+     }
+     function myFunction3() {
+    var person = prompt("Please enter your Contact", "");
+    if (person != null) {
+    document.getElementById("3").innerHTML =
+    "This is your contact ! " + person + "";
+    }
+    }
+    function myFunction4() {
+    var person = prompt("Please enter your Email", "");
+    if (person != null) {
+     document.getElementById("4").innerHTML =
+    "Here is your Email ! " + person + "";
+    }
+      }
+    function myFunction5() {
+    var person = prompt("Please enter your Address", "");
+    if (person != null) {
+    document.getElementById("5").innerHTML =
+    "Here is your Address ! " + person + "";
+    }
+    }
+
+
+    </script>
+    </div>
+    <div class="right">
+       <button onclick="()">MY TRANSACTION</button>
+       <p id="transaction"></p>
+    <br>
+     <script>
+     function myFunction() {
+    var person = prompt("Please enter your all ammount", "");
+    if (person != null) {
+    document.getElementById("transaction").innerHTML =
+    " This is your first Transaction !" + person + "";
+    }
+    }
+  </script>
+  <button onclick="myFunction()">Number of Transactions</button>
+       <p id="trans"></p>
+<div id="trans1">
+      
+       
+      <h2>Enter Values here</h2>
+     <input type="text" id="enter"><br>
+     <input type="text" id="enter2"><br>
+      <input type="text" id="enter3"><br>
+      <input type="text" id="enter4"><br>
+   
+   <br><br>
+      <button id="btn">SUM</button>
+       <script>
+
+
+
+       document.getElementById("btn").onclick = function(){
+
+      var a = document.getElementById("enter").value; 
+      var b = document.getElementById("enter2").value;
+      var c = document.getElementById("enter3").value;
+      var d = document.getElementById("enter4").value;
+
+      if(a!==b){
+
+      var e = parseInt(a) + parseInt(b) +parseInt(c)+ parseInt(d);
+
+      document.getElementById("trans").innerHTML = "Total numbers of transaction add up to = " + e;
+
+     } else if(a == a){
+
+      var zz = (parseInt(a) + parseInt(b) + parseInt(c)+ parseInt(d) ) ;
+
+      document.getElementById("trans").innerHTML = "Your 4 numbers are the same there the sum is an outcome a = " +e ;
+
+      } 
+      }
+
+      </script>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("trans1");
+  if (x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
+    </div>
+</div>
+</body>
+</html>
+
